@@ -10,6 +10,7 @@
 
 - Download the latest release from [the releases page](https://github.com/whosneksio/wuwa.fps/releases).
 - Run `wuwa.fps.exe`.
+- Follow the instructions provided.
 
 ### Building
 
