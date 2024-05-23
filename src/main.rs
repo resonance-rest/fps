@@ -1,7 +1,6 @@
 use std::{fs::File, io::{self, Write}};
 use rusqlite::{params, Connection};
 use serde_json::Value;
-
 fn main() {
     println!("\nWuthering Waves FPS unlocker.\n");
     println!("Make sure to set your FPS cap to 60 in game, turn off V-Sync and turn off your game.");
@@ -14,10 +13,23 @@ fn main() {
     println!("Enter the path to the LocalStorage.db file (C:\\Wuthering Waves\\Wuthering Waves Game\\Client\\Saved\\LocalStorage\\LocalStorage.db)\n");
 
     let mut db_path = String::new();
+
     io::stdin()
         .read_line(&mut db_path)
         .expect("Failed to read input.");
     let db_path = db_path.trim();
+
+    println!("Enter the desired FPS value (75, 240, 360)\n");
+
+    let mut fps_value = String::new();
+
+    io::stdin()
+        .read_line(&mut fps_value)
+        .expect("Failed to read input.");
+
+    let fps_value: i32 = fps_value.trim().parse()
+        .expect("Please enter a valid integer.");
+
 
     let connection = Connection::open(db_path).expect("Failed to connect to LocalStorage.db.");
     println!("Connected to LocalStorage.db.");
@@ -37,7 +49,7 @@ fn main() {
 
     let mut game_quality_setting: Value =
         serde_json::from_str(&game_quality_setting_json).expect("Parsing failed.");
-    game_quality_setting["KeyCustomFrameRate"] = Value::Number(serde_json::Number::from(120));
+    game_quality_setting["KeyCustomFrameRate"] = Value::Number(serde_json::Number::from(fps_value));
 
     let updated_game_quality_setting_json =
         serde_json::to_string(&game_quality_setting).expect("Serializing failed.");
