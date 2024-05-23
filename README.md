@@ -1,4 +1,4 @@
-# 🔓 FPS unlocker for Wuthering Waves game ⎯ made with **Rust**
+# 🔓 FPS unlocker for Wuthering Waves ⎯ made with **Rust**
 
 ### Notices
 
