@@ -1,8 +1,9 @@
 [package]
 name = "wutheringwaves_fps_unlocker"
-version = "0.1.0"
+version = "0.1.2"
 edition = "2021"
 
 [dependencies]
 rusqlite = { version = "0.29.0", features = ["bundled"] }
 serde_json = "1.0"
+walkdir = "2.3.2"

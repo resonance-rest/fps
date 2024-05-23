@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # 🔓 FPS unlocker for Wuthering Waves game ⎯ made with **Rust**
-=======
-# 🔓 FPS unlocker for Wuthering Waves game - made with **Rust**
->>>>>>> e0dbd40f6a047ee7f651a264e76cd9b13939560e
 
 ### Notices
 
@@ -20,9 +16,5 @@
 - Clone the repository: `git clone https://github.com/whosneksio/wuwa.fps`.
 - Build the project: `cargo build --release` (assuming you have [Rust](https://rustup.rs/) installed).
 - Launch the compiled file in `./target/release/wutheringwaves_fps_unlocker.exe`.
-<<<<<<< HEAD
 
 
-
-=======
->>>>>>> e0dbd40f6a047ee7f651a264e76cd9b13939560e
