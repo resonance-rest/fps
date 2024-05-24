@@ -18,4 +18,8 @@
 - Build the project: `cargo build --release` (assuming you have [Rust](https://rustup.rs/) installed).
 - Launch the compiled file in `./target/release/wutheringwaves_fps_unlocker.exe`.
 
+### Video tutorial
+
+[![Tutorial](https://img.youtube.com/vi/Oer96jxax38/0.jpg)](https://www.youtube.com/watch?v=Oer96jxax38)
+
 
