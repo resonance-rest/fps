@@ -1,3 +1,5 @@
+### Discontinued
+
 # 🔓 FPS unlocker for Wuthering Waves ⎯ made with [**Rust**](https://www.rust-lang.org/)
 
 ### Notices
